@@ -23,7 +23,7 @@
 
         methods: {
             getAccount() {
-                return new Promise((resolve, reject) => {
+                return new Promise((resolve) => {
                     window.$web3.eth.getAccounts().then(res => {
                         if (!res.length) {
                             alert("Please login to MetaMask!");
@@ -38,7 +38,7 @@
                 this.getAccount().then((address) => {
                     axios.get(`/api/users/${address.toLowerCase()}`).then((res) => {
                         if (res.status === 200) {
-                            window.$web3.eth.personal.sign(window.$web3.utils.fromUtf8(`Login for with Nonce: ${res.data.nonce}`), address.toLowerCase()).then((signature) => {
+                            window.$web3.eth.personal.sign(window.$web3.utils.fromUtf8(`Login with nonce: ${res.data.nonce}`), address.toLowerCase()).then((signature) => {
                                 axios.get(`/api/users/${address.toLowerCase()}/${signature}`).then((res) => {
                                     if (!res.data.success) {
                                         alert("Login failed!");

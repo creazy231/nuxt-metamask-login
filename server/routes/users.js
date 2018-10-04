@@ -32,7 +32,7 @@ router.get("/users/:address/:signature", (req, res) => {
     if (req.params.address && req.params.signature) {
         if (users[req.params.address]) {
 
-            const msg = `Login for with Nonce: ${users[req.params.address].nonce}`;
+            const msg = `Login with nonce: ${users[req.params.address].nonce}`;
             const msgBuffer = ethUtil.toBuffer(msg);
             const msgHash = ethUtil.hashPersonalMessage(msgBuffer);
             const signatureBuffer = ethUtil.toBuffer(req.params.signature);
