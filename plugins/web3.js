@@ -6,4 +6,4 @@ if (process.client) {
     window.$web3 = instance;
 }
 
-export default instance
+export default instance;

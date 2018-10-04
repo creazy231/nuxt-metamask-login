@@ -16,20 +16,7 @@ export const state = () => ({
     }
 });
 
-export const mutations = {
-    toggleSidebar(state) {
-        state.sidebar = !state.sidebar;
-    },
-    web3(state, value) {
-        state.web3 = value;
-    },
-    setAccount(state, value) {
-        state.account.address = value;
-    },
-    setAuth(state, value) {
-        state.auth = value;
-    },
-};
+export const mutations = {};
 
 export const actions = {
     nuxtServerInit({commit}, {req}) {

@@ -1,15 +1,17 @@
 import { Router } from 'express';
 
-const router = Router();
+const router = Router({});
 
 // personal dependencies
 import ethUtil from 'ethereumjs-util';
 
-/* Helpers */
+// helper function to generate a random number between a given min and max value
 function rnd(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 
+// temporary user storage
+// This could be a MySQL database etc.
 let users = {};
 
 router.get("/users/:address", (req, res) => {
@@ -63,10 +65,6 @@ router.get("/users/:address/:signature", (req, res) => {
 
 router.get("/users/", (req, res) => {
     res.json({success: true, users: users});
-});
-
-router.get("/ethUtil/", (req, res) => {
-    res.json(JSON.stringify(ethUtil));
 });
 
 export default router;
