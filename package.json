@@ -1,0 +1,31 @@
+{
+  "name": "nuxt-metamask-login",
+  "version": "1.0.0",
+  "description": "A demo which uses nuxt and metamask to sign in a user.",
+  "author": "Tobias Thiele",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "axios": "latest",
+    "bootstrap": "^4.1.3",
+    "cookieparser": "^0.1.0",
+    "cross-env": "^5.2.0",
+    "ethereumjs-util": "^5.2.0",
+    "express": "latest",
+    "js-cookie": "^2.2.0",
+    "nuxt": "^2.0.0",
+    "web3": "^1.0.0-beta.36"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.11.0",
+    "sass-loader": "^7.1.0"
+  }
+}
