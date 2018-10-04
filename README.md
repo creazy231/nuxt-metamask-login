@@ -5,6 +5,7 @@ This demo is published to see how you can use MetaMask to authenticate users usi
 
 ## Live Demo  🚀
 The app is hosted on Now by Zeit: https://nuxt-metamask-login-yezpjsooep.now.sh/
+
 ![enter image description here](https://i.gyazo.com/824ee48dfde6068fa60454a68094e93c.gif)
 
 ## Getting Started
