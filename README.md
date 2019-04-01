@@ -1,4 +1,6 @@
 
+# DEPRECATED! USE https://github.com/creazy231/nuxt-web3-auth INSTEAD
+
 # Login with MetaMask using Nuxt.js
 
 This demo is published to see how you can use MetaMask to authenticate users using [Nuxt.js](https://nuxtjs.org/)
